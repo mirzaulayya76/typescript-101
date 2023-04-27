@@ -21,3 +21,11 @@ function multiply(value1, value2) {
 }
 const result = multiply(34, 56);
 console.log(result);
+const persegiSatu = {
+    panjang: 10,
+    lebar: 5,
+};
+function hitungLuas(persegi) {
+    return persegi.panjang * persegi.lebar;
+}
+hitungLuas(persegiSatu);

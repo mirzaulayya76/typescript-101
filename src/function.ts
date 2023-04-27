@@ -29,3 +29,18 @@ function multiply(value1: number, value2: number): number {
 }
 const result = multiply(34, 56);
 console.log(result);
+
+type Persegi = {
+  panjang: number;
+  lebar: number;
+};
+
+const persegiSatu = {
+  panjang: 10,
+  lebar: 5,
+};
+
+function hitungLuas(persegi: Persegi) {
+  return persegi.panjang * persegi.lebar;
+}
+hitungLuas(persegiSatu);

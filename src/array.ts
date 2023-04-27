@@ -1,8 +1,29 @@
 // Array
-let lastDayOfSummer: string[];
-lastDayOfSummer = ['Mirza', 'Fateh', 'Fayrus', 'Zidhan']; // Isi array harus sama-sama string
+// let lastDayOfSummer: string[];
+// lastDayOfSummer = ['Mirza', 'Fateh', 'Fayrus', 'Zidhan']; // Isi array harus sama-sama string
 
+const lastDayOfSummer = ['Mirza', 'Fateh', 'Fayrus', 'Zidhan'];
 console.log(lastDayOfSummer);
+
+const upperCase = lastDayOfSummer.map((a) => a.toUpperCase());
+console.log(upperCase);
+
+type Member = {
+  name: string;
+  age: number;
+};
+function bandMember(person: Member) {
+  if (person.name === 'Mirza') {
+    console.log('Last day of summer');
+  } else {
+    console.log('not a member');
+  }
+}
+
+bandMember({
+  name: 'Argus',
+  age: 45,
+});
 
 let umurMember: number[];
 umurMember = [34, 30, 40, 11];
